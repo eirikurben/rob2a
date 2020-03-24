@@ -206,17 +206,15 @@ function w3_close() {
   overlayBg.style.display = "none";
 }
 </script>
-<code>#pragma config(Motor,  port2,           rightMotor,    tmotorNormal, openLoop, reversed)
-#pragma config(Motor,  port3,           leftMotor,     tmotorNormal, openLoop)
-
-task main()
+<code>#include<stdio.h>
+#define TOTAL_ELEMENTS (sizeof(array) / sizeof(array[0]))
+int array[] = {23,34,12,17,204,99,16};
+int main()
 {
-	wait1Msec(2000);					
-
-	// Move forward at full power for 3 seconds
-	motor[rightMotor] = 127;		  // Motor on port2 is run at full (127) power forward
-	motor[leftMotor]  = 127;		  // Motor on port3 is run at full (127) power forward
-	wait1Msec(3000);			        // Robot runs previous code for 3000 milliseconds before moving on
+int d;
+for(d=-1;d <= (TOTAL_ELEMENTS-2);d++)
+printf("%d\n",array[d+1]);
+return 0;
 }								
 </code>
 </body>
