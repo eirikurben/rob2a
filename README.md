@@ -5,7 +5,7 @@ vélmenni I grunnur með VEX
 Here is a simple flow chart:
 
 ```mermaid
-graph TD
+flowchart TD
     A([Start]) --> B[Initialize robot<br/>(drivetrain, motors, GPS)]
     B --> C[Wait for start command]
     C --> D{Stop button pressed?}
