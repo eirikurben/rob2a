@@ -1,7 +1,7 @@
 # rob2a
 vélmenni I grunnur með VEX
 # Námsefni frá VEX og Carnegie Mellon háskólanum
-
+```mermaid
 flowchart TD
     A([Start]) --> B[Initialize robot<br/>(drivetrain, motors, GPS)]
     B --> C[Wait for start command]
@@ -12,3 +12,4 @@ flowchart TD
     G --> D
     D -- Yes --> H[Stop all motors]
     H --> I([End])
+```
