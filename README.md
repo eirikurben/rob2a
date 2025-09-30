@@ -6,7 +6,8 @@ Here is a simple flow chart:
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[Initialize robot<br/>(drivetrain, motors, GPS)]
+    A([Start])
+    A--> B[Initialize robot<br/>(drivetrain, motors, GPS)]
     B --> C[Wait for start command]
     C --> D{Stop button pressed?}
     D -- No --> E[Read (x, y) from GPS]
